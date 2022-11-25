@@ -9,6 +9,8 @@ export interface ITheme {
     error: string;
     warning: string;
     info: string;
+    transparent: string;
+    nav: string;
   };
   zIndex: {
     min: number;
@@ -30,6 +32,7 @@ export interface ITheme {
     laptopL: string;
     desktop: string;
     desktopL: string;
+    themeButton: string;
   };
 }
 
@@ -41,9 +44,14 @@ const colorsLight = {
   error: '#dc3545',
   warning: '#ffc107',
   info: '#17a2b8',
+  background: '#f8f9fa',
   light: '#f8f9fa',
   dark: '#343a40',
   black: '#000',
+  text : '#000',
+  transparent: 'transparent',
+  themeButton: '#ffdb4d',
+  nav: '#fff',
 };
 
 const colorsDark = {
@@ -52,6 +60,8 @@ const colorsDark = {
   secondary: '#af93ff',
   background: '#000000',
   text: '#ffffff',
+  themeButton: '#232530',
+  nav: '#121212',
 };
 
 const zIndex = {

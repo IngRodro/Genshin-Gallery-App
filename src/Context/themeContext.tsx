@@ -10,7 +10,7 @@ export enum Theme {
 
 export type ThemeContextType = {
   theme: Theme;
-  themeToggle: (Theme: Theme) => void;
+  themeToggle: () => void;
 }
 
 interface Children {

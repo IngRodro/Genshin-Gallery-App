@@ -4,13 +4,12 @@ import { Loading } from '../Loading';
 import { ITheme } from '../../../Styles/theme';
 
 interface IButton {
-  onClick: () => void;
+  onClick?: () => void;
   color: keyof ITheme['colors'];
   labelColor: keyof ITheme['colors'];
-  loading: boolean;
-  disabled: boolean;
-  children: React.ReactNode;
-  className: string;
+  loading?: boolean;
+  disabled?: boolean;
+  children?: React.ReactNode;
 }
 
 const Button = ({
